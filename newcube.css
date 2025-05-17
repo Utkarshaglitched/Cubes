@@ -1,0 +1,113 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.space {
+    perspective: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.dspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    
+
+}
+
+.dspace div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.front {
+    background-color: aqua;
+    border: solid black 2px;
+    opacity: 0.3;
+    transform: translateZ(100px);
+}
+
+.back {
+    background-color: rgb(77, 255, 0);
+    border: solid black 2px;
+    opacity: 0.3;
+    transform: translateZ(-100px);
+}
+
+.top {
+    background-color: rgb(98, 0, 255);
+    border: solid black 2px;
+    opacity: 0.3;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.bottom {
+    background-color: rgb(255, 0, 0);
+    border: solid black 2px;
+    opacity: 0.3;
+    transform: rotateY(90deg) translateZ(-100px);
+}
+
+.left {
+    background-color: rgb(255, 0, 166);
+    border: solid black 2px;
+    opacity: 0.3;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.right {
+    background-color: rgb(255, 204, 0);
+    border: solid black 2px;
+    opacity: 0.3;
+    transform: rotateX(-90deg) translateZ(-100px);
+}
+
+button {
+    height: 5vh;
+    width: 10vw;
+    color: aqua;
+    background-color: black;
+    border: solid gainsboro 3px;
+    border-radius: 15vh;
+    position: absolute;
+    z-index: 2;
+}
+
+#up {
+    left: 2vw;
+    bottom: 37vh;
+}
+
+#down {
+    left: 2vw;
+    bottom: -11vh;
+}
+
+#leftbut {
+    left: -12vw;
+    bottom: 12vh;
+}
+
+#rightbut {
+    left: 17vw;
+    bottom: 12vh;
+}
